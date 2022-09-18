@@ -20,6 +20,9 @@
   --white: #ffff;
   --error: #e7195a;
 }
+html {
+  scroll-snap-type: y mandatory;
+}
 
 body {
   background-color: var(--bg);
@@ -31,6 +34,7 @@ body {
 
 header {
   min-height: 100vh;
+  scroll-snap-align: start;
 }
 .eventyr-logo {
   padding-top: 30%;
@@ -84,6 +88,8 @@ a {
   text-align: center;
   font-size: 3rem;
   animation: updown 1.8s linear infinite;
+  margin: 0 auto;
+  max-width: 2rem;
 }
 
 /* guide sections */
@@ -103,6 +109,7 @@ section {
   margin: 0 auto;
   /* margin-top: 50%; */
   max-width: 92%;
+  scroll-snap-align: start;
 }
 
 .guide-p {
@@ -114,7 +121,7 @@ section {
 .hidden {
   opacity: 0;
   filter: blur(5px);
-  transform: translateX(-100%);
+  /* transform: translateX(-100%); */
   transition: all 0.8s;
   transition-delay: 500ms;
 }
@@ -122,9 +129,8 @@ section {
 .show {
   opacity: 1;
   filter: blur(0);
-  transform: translateX(0);
+  /* transform: translateX(0); */
 }
-
 /* animations */
 
 @keyframes updown {
