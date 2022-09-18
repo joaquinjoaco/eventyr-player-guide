@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
+  font-family: "Nunito", sans-serif;
+}
+
+:root {
+  --bg: #121212;
+  --primary: #a7ff83;
+  --secondary: #099b1e;
+  --error: #e7195a;
+}
+
+body {
+  background-color: var(--bg);
+}
+
+/* header */
+
+.eventyr-logo {
+  padding-top: 30%;
+  padding-bottom: 2rem;
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  max-width: 80%;
+}
+
+.guide-title {
+  display: flex;
+  background-color: var(--secondary);
+  width: 80%;
+  max-width: 80%;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+h1 {
+  color: var(--primary);
+  font-size: 1.75rem;
+  font-weight: 500;
+}
+
+/* swipe gesture */
+
+.hand-container {
+  display: block;
+  margin-top: 40%;
+}
+
+.hand {
+  display: block;
+  text-align: center;
+  font-size: 3rem;
+  animation: updown 1.8s linear infinite;
+}
+
+.swipe-p {
+  display: block;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: var(--primary);
+  /* animation: fade 1.5s linear infinite; */
+}
+
+@keyframes updown {
+  0% {
+    opacity: 1;
+    transform: rotate(-90deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+
+  50% {
+    rotate: 15deg;
+    transform: translateY(-150px);
+    opacity: 0;
+  }
+}
+/* 
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+    transform: translateY(-150px);
+  }
+} */
