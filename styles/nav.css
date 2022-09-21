@@ -1,0 +1,106 @@
+nav {
+  height: 65px;
+}
+
+#menu-toggle {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 25px;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menu-toggle input {
+  display: flex;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+}
+
+#menu-toggle span {
+  display: flex;
+  width: 29px;
+  height: 2px;
+  margin-bottom: 5px;
+  position: relative;
+  background: var(--primary);
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 5px 0px;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+}
+
+#menu-toggle span:first-child {
+  transform-origin: 0% 0%;
+}
+
+#menu-toggle span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+
+#menu-toggle span:nth-last-child(3) {
+  transform-origin: 0% 100%;
+  width: 20px;
+}
+
+#menu-toggle input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-3px, -1px);
+  background: var(--white);
+}
+#menu-toggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menu-toggle input:checked ~ span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu {
+  position: absolute;
+  top: 0;
+  width: 65vw;
+  height: 100vh;
+  margin: 0 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  background-color: var(--secondary);
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+#menu li {
+  padding: 10px 0;
+  transition-delay: 2s;
+  list-style: none;
+}
+
+#menu a {
+  color: var(--primary);
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+
+#menu-toggle input:checked ~ ul {
+  transform: none;
+}
+
+.sticky {
+  position: fixed;
+  width: 100vw;
+  background-color: rgba(155, 216, 142, 0.2);
+  top: 0;
+  transition: all 0.4s;
+}
+
+.sticky + section {
+  padding-top: 130px;
+}

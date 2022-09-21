@@ -44,21 +44,6 @@ h2 {
 a {
   text-decoration: none;
 }
-/* swipe gesture */
-
-.hand-container {
-  display: block;
-  margin-top: 60%;
-}
-
-.hand {
-  display: block;
-  text-align: center;
-  font-size: 3rem;
-  animation: updown 1.8s linear infinite;
-  margin: 0 auto;
-  max-width: 2rem;
-}
 
 /* guide sections */
 
@@ -75,10 +60,8 @@ section {
   min-height: 100vh;
   text-align: center;
   margin: 0 auto;
-  /* margin-top: 50%; */
   max-width: 100%;
   scroll-snap-align: start;
-  /* padding: 100vw; */
 }
 
 section .content {
@@ -86,10 +69,10 @@ section .content {
 }
 
 section.about {
-  background-color: #099b1e;
+  background-color: var(--secondary);
 }
 section.undefined {
-  background-color: #099b1e;
+  background-color: var(--secondary);
 }
 
 .guide-p {
@@ -104,9 +87,9 @@ section.undefined {
   margin-top: 2rem;
   padding: 1rem;
   text-decoration: none;
+  border-radius: 5px;
   color: var(--primary);
   background-color: var(--tertiary);
-  border-radius: 5px;
 }
 
 .rules-link {
