@@ -1,10 +1,4 @@
-/* header */
-.scroll-content {
-  /* this is so that we can keep the scroll-snapping from interacting uninentendedly with the sticky navbar */
-  padding-top: 20rem;
-}
-
-.pelao {
+.presentation {
   min-height: 100vh;
   scroll-snap-align: start;
 }
