@@ -1,9 +1,14 @@
 /* header */
+.scroll-content {
+  /* this is so that we can keep the scroll-snapping from interacting uninentendedly with the sticky navbar */
+  padding-top: 20rem;
+}
 
-header {
+.pelao {
   min-height: 100vh;
   scroll-snap-align: start;
 }
+
 .eventyr-logo {
   padding-top: 30%;
   padding-bottom: 2rem;
@@ -37,7 +42,7 @@ h2 {
   font-weight: 300;
   color: var(--primary);
   background-color: var(--tertiary);
-  animation: fade 1.8s linear infinite;
+  /* animation: fade 1.8s linear infinite; */
   border-radius: 0px 0px 5px 5px;
 }
 

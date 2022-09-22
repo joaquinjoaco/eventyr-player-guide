@@ -13,10 +13,17 @@ section {
   text-align: left;
   margin: 0 auto;
   max-width: 100%;
+  scroll-snap-align: start;
+  scroll-padding-top: 2rem;
 }
 
 section .content {
   max-width: 92%;
+}
+
+.scroll-content {
+  /* this is so that we can keep the scroll-snapping from interacting uninentendedly with the sticky navbar */
+  padding-top: 20rem;
 }
 
 p {
