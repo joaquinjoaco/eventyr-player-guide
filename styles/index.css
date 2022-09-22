@@ -1,6 +1,17 @@
+.hidden {
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+.show {
+  transform: translateX(0);
+  transition-delay: 200ms;
+}
+
+header {
+  padding-bottom: 10vh;
+}
 .presentation {
   min-height: 100vh;
-  scroll-snap-align: start;
 }
 
 .eventyr-logo {
@@ -56,7 +67,7 @@ section {
   display: grid;
   place-items: center;
   align-content: center;
-  min-height: 100vh;
+  height: 100vh;
   text-align: center;
   margin: 0 auto;
   max-width: 100%;

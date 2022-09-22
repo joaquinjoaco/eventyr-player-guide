@@ -21,10 +21,6 @@
   --error: #e7195a;
 }
 
-html {
-  scroll-snap-type: y mandatory;
-}
-
 body {
   background-color: var(--bg);
   padding: 0;
