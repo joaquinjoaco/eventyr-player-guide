@@ -71,11 +71,10 @@ section {
   text-align: center;
   margin: 0 auto;
   max-width: 100%;
-  scroll-snap-align: start;
 }
 
 section .content {
-  max-width: 92%;
+  max-width: 95%;
 }
 
 section.about {
