@@ -4,25 +4,47 @@ h1 {
   font-weight: 800;
 }
 
+h2 {
+  color: var(--primary);
+  font-size: 1.35rem;
+  font-weight: 800;
+}
+
 section {
   display: grid;
   place-items: center;
   align-content: center;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   text-align: left;
   margin: 0 auto;
   max-width: 100%;
   scroll-padding-top: 2rem;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 }
 
 section .content {
   max-width: 95%;
 }
 
-.guide-p {
+.guide-p,
+li {
   font-size: 1.1rem;
   font-weight: 300;
   color: var(--white);
+}
+
+.list-container {
+  margin-top: 2.6rem;
+  margin-bottom: 2.6rem;
+}
+
+ul {
+  list-style: square inside;
+}
+
+li {
+  margin-top: 0.5rem;
 }
 
 .link-p {
@@ -35,10 +57,10 @@ section .content {
 .link {
   font-weight: 800;
   font-size: 1.3rem;
-  margin-top: 2rem;
-  /* padding: 1rem; */
   text-decoration: underline;
-  /* border-radius: 5px; */
   color: var(--primary);
-  /* background-color: var(--tertiary); */
+}
+
+.link-container {
+  margin-top: 5rem;
 }
