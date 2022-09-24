@@ -78,6 +78,7 @@ nav {
   transform: translate(-100%, 0);
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
   box-shadow: 0 2px 4px 0 rgb(0 0 0 / 0.08);
+  overflow-y: scroll;
 }
 
 #menu li {
@@ -100,15 +101,7 @@ nav {
 #menu-toggle input:checked ~ ul {
   transform: none;
 }
-/* 
-.sticky {
-  position: fixed;
-  width: 100vw;
-  background-color: rgba(155, 216, 142, 0.2);
-  top: 0;
-  transition: all 0.4s;
-}
 
-.sticky + section {
-  padding-top: 130px;
-} */
+/* Small tablets */
+@media screen and (min-width: 700px) {
+}

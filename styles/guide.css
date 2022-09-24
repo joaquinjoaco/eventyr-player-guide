@@ -47,13 +47,6 @@ li {
   margin-top: 0.5rem;
 }
 
-.link-p {
-  margin-top: 3rem;
-  color: var(--primary);
-  font-size: 1.5rem;
-  font-weight: 500;
-}
-
 .link {
   font-weight: 800;
   font-size: 1.3rem;
@@ -63,4 +56,53 @@ li {
 
 .link-container {
   margin-top: 5rem;
+}
+
+/* Small tablets */
+@media screen and (min-width: 700px) {
+  section .content {
+    max-width: 80%;
+  }
+
+  h1 {
+    font-size: 2.45rem;
+  }
+
+  h2 {
+    font-size: 1.65rem;
+  }
+
+  .guide-p,
+  li {
+    font-size: 1.35rem;
+  }
+
+  .link {
+    font-size: 1.5rem;
+  }
+}
+
+/* Decently sized Tablets */
+
+@media screen and (min-width: 700px) {
+  section .content {
+    max-width: 80%;
+  }
+
+  h1 {
+    font-size: 2.45rem;
+  }
+
+  h2 {
+    font-size: 1.65rem;
+  }
+
+  .guide-p,
+  li {
+    font-size: 1.35rem;
+  }
+
+  .link {
+    font-size: 1.5rem;
+  }
 }

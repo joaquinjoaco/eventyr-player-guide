@@ -15,11 +15,11 @@ header {
 }
 
 .eventyr-logo {
-  padding-top: 30%;
+  margin: 0 auto;
   padding-bottom: 2rem;
   display: block;
-  margin: 0 auto;
-  width: 80%;
+  padding-top: 12vh;
+  width: 75%;
   max-width: 80%;
 }
 
@@ -32,12 +32,6 @@ header {
   margin: 0 auto;
   text-align: center;
   border-radius: 5px;
-}
-
-h2 {
-  color: var(--primary);
-  font-size: 1.75rem;
-  font-weight: 500;
 }
 
 .hero-p {
@@ -116,33 +110,26 @@ section.undefined {
   height: 100%;
 }
 
-/* animations */
-
-@keyframes updown {
-  0% {
-    opacity: 1;
-    transform: rotate(-90deg);
-  }
-  100% {
-    opacity: 0;
-    transform: translateY(0);
+/* Small tablets */
+@media screen and (min-width: 700px) {
+  h1 {
+    font-size: 2.55rem;
   }
 
-  50% {
-    rotate: 15deg;
-    transform: translateY(-150px);
-    opacity: 0;
+  .hero-p,
+  .guide-p {
+    font-size: 1.55rem;
   }
-}
 
-@keyframes fade {
-  0% {
-    opacity: 1;
+  section .content {
+    max-width: 80%;
   }
-  50% {
-    opacity: 0;
+
+  .about-button {
+    font-size: 1.45rem;
   }
-  100% {
-    opacity: 1;
+
+  .rules-link {
+    font-size: 1.45rem;
   }
 }
