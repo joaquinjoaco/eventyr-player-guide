@@ -132,6 +132,7 @@ nav {
   }
 
   #menu {
+    padding-top: 80px;
     width: 20vw;
     transform: none;
   }
