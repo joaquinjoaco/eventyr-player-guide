@@ -6,6 +6,9 @@
   transform: translateX(0);
   transition-delay: 200ms;
 }
+.hero-p.desktop {
+  display: none;
+}
 
 header {
   padding-bottom: 10vh;
@@ -20,7 +23,6 @@ header {
   display: block;
   padding-top: 12vh;
   width: 75%;
-  max-width: 80%;
 }
 
 .hero {
@@ -87,7 +89,7 @@ section.undefined {
 .about-button {
   font-weight: 800;
   font-size: 1.3rem;
-  margin-top: 2rem;
+  margin-top: 3rem;
   padding: 1rem;
   text-decoration: none;
   border-radius: 5px;
@@ -97,7 +99,7 @@ section.undefined {
 
 .rules-link {
   text-decoration: underline;
-  font-size: 1.3rem;
+  font-size: 1.45rem;
   font-weight: 300;
   color: var(--primary);
 }
@@ -126,10 +128,107 @@ section.undefined {
   }
 
   .about-button {
-    font-size: 1.45rem;
+    font-size: 1.55rem;
   }
 
   .rules-link {
-    font-size: 1.45rem;
+    font-size: 1.55rem;
+  }
+}
+
+/* Decently sized tablets */
+@media screen and (min-width: 900px) {
+  h1 {
+    font-size: 3.25rem;
+  }
+
+  .hero-p,
+  .guide-p {
+    font-size: 1.95rem;
+  }
+
+  section .content {
+    max-width: 80%;
+  }
+
+  .about-button {
+    font-size: 1.95rem;
+  }
+
+  .rules-link {
+    font-size: 1.95rem;
+  }
+}
+
+/* Laptops */
+@media screen and (min-width: 1200px) {
+  .presentation,
+  .content {
+    padding-left: 20vw;
+  }
+
+  .rules-link,
+  .about-button {
+    margin-left: 20vw;
+  }
+
+  .eventyr-logo {
+    width: 30%;
+  }
+
+  .hero {
+    width: 50%;
+  }
+
+  .hero-p {
+    display: none;
+  }
+
+  .hero-p.desktop {
+    display: block;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  .guide-p {
+    font-size: 1.3rem;
+  }
+
+  section .content {
+    max-width: 80%;
+  }
+
+  .about-button {
+    font-size: 1.55rem;
+  }
+
+  .rules-link {
+    font-size: 1.55rem;
+  }
+}
+
+/* Bigger screens */
+@media screen and (min-width: 1500px) {
+  h1 {
+    font-size: 2.55rem;
+  }
+
+  .hero-p,
+  .guide-p {
+    font-size: 1.55rem;
+  }
+
+  section .content {
+    max-width: 80%;
+  }
+
+  .about-button {
+    font-size: 1.55rem;
+  }
+
+  .rules-link {
+    font-size: 1.55rem;
   }
 }

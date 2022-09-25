@@ -69,7 +69,7 @@ li {
   }
 
   h2 {
-    font-size: 1.65rem;
+    font-size: 1.55rem;
   }
 
   .guide-p,
@@ -82,9 +82,58 @@ li {
   }
 }
 
-/* Decently sized Tablets */
+/* Decently sized tablets */
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 900px) {
+  section .content {
+    max-width: 80%;
+  }
+
+  h1 {
+    font-size: 3.15rem;
+  }
+
+  h2 {
+    font-size: 2.15rem;
+  }
+
+  .guide-p,
+  li {
+    font-size: 1.55rem;
+  }
+
+  .link {
+    font-size: 1.8rem;
+  }
+}
+
+/* Laptops */
+@media screen and (min-width: 1200px) {
+  section .content {
+    max-width: 80%;
+    padding-left: 20vw;
+  }
+
+  h1 {
+    font-size: 1.7rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  .guide-p,
+  li {
+    font-size: 1.05rem;
+  }
+
+  .link {
+    font-size: 1.25rem;
+  }
+}
+
+/* Bigger screens */
+@media screen and (min-width: 1500px) {
   section .content {
     max-width: 80%;
   }
@@ -94,7 +143,7 @@ li {
   }
 
   h2 {
-    font-size: 1.65rem;
+    font-size: 1.55rem;
   }
 
   .guide-p,

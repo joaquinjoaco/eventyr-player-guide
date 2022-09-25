@@ -104,4 +104,54 @@ nav {
 
 /* Small tablets */
 @media screen and (min-width: 700px) {
+  #menu a {
+    font-size: 1.45rem;
+  }
+
+  #menu a.inicio {
+    font-size: 2.25rem;
+  }
+}
+
+/* Decently sized tablets */
+@media screen and (min-width: 900px) {
+  #menu a {
+    font-size: 2.05rem;
+  }
+
+  #menu a.inicio {
+    font-size: 3.25rem;
+  }
+}
+
+/* Laptops */
+@media screen and (min-width: 1200px) {
+  #menu-toggle span,
+  #menu-toggle input {
+    display: none;
+  }
+
+  #menu {
+    width: 20vw;
+    transform: none;
+  }
+
+  #menu a {
+    font-size: 1.1rem;
+  }
+
+  #menu a.inicio {
+    font-size: 1.75rem;
+  }
+}
+
+/* Bigger screens */
+@media screen and (min-width: 1500px) {
+  #menu a {
+    font-size: 1.65rem;
+  }
+
+  #menu a.inicio {
+    font-size: 2.45rem;
+  }
 }
