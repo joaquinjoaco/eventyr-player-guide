@@ -212,12 +212,11 @@ section.undefined {
 /* Bigger screens */
 @media screen and (min-width: 1500px) {
   h1 {
-    font-size: 2.55rem;
+    font-size: 1.75rem;
   }
 
-  .hero-p,
   .guide-p {
-    font-size: 1.55rem;
+    font-size: 1.3rem;
   }
 
   section .content {

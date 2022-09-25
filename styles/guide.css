@@ -134,24 +134,20 @@ li {
 
 /* Bigger screens */
 @media screen and (min-width: 1500px) {
-  section .content {
-    max-width: 80%;
-  }
-
   h1 {
-    font-size: 2.45rem;
+    font-size: 1.7rem;
   }
 
   h2 {
-    font-size: 1.55rem;
+    font-size: 1.3rem;
   }
 
   .guide-p,
   li {
-    font-size: 1.35rem;
+    font-size: 1.05rem;
   }
 
   .link {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 }
