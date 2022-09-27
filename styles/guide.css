@@ -28,7 +28,7 @@ section .content {
 }
 
 .guide-p,
-li {
+.content li {
   font-size: 1.1rem;
   font-weight: 300;
   color: var(--white);
@@ -39,12 +39,26 @@ li {
   margin-bottom: 2.6rem;
 }
 
-ul {
+.content ul {
   list-style: square inside;
 }
 
-li {
-  margin-top: 0.5rem;
+.content ul li {
+  margin-top: 0.55rem;
+}
+
+.content ul.nested {
+  margin-left: 2rem;
+  list-style: circle inside;
+}
+
+.image-container {
+  text-align: center;
+}
+
+.guide-image {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .link {
@@ -73,7 +87,7 @@ li {
   }
 
   .guide-p,
-  li {
+  .content li {
     font-size: 1.35rem;
   }
 
@@ -98,7 +112,7 @@ li {
   }
 
   .guide-p,
-  li {
+  .content li {
     font-size: 1.55rem;
   }
 
@@ -123,7 +137,7 @@ li {
   }
 
   .guide-p,
-  li {
+  .content li {
     font-size: 1.05rem;
   }
 
@@ -143,7 +157,7 @@ li {
   }
 
   .guide-p,
-  li {
+  .content li {
     font-size: 1.05rem;
   }
 
